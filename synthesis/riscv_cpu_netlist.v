@@ -1,4 +1,4 @@
- stall_ctrl ( rst, stallreq_if, stallreq_id, stallreq_ex, stallreq_mem, 
+module stall_ctrl ( rst, stallreq_if, stallreq_id, stallreq_ex, stallreq_mem, 
         stall );
   output [5:0] stall;
   input rst, stallreq_if, stallreq_id, stallreq_ex, stallreq_mem;
@@ -11778,3 +11778,4 @@ module riscv_cpu ( clk, rst, mem_data_i, mem_busy_i, mem_done_i, mem_rwe_o,
   NBUFFX8_LVT U102 ( .A(wb_reg_wdata[5]), .Y(n133) );
   NBUFFX8_LVT U103 ( .A(wb_reg_wdata[17]), .Y(n134) );
   NBUFFX8_LVT U104 ( .A(wb_reg_wdata[8]), .Y(n135) );
+endmodule
